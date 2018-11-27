@@ -7,36 +7,56 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">WebCondo</a>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="apartamento/listarApartamento.jsp">Apartamentos<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="condominio/listarCondominio.jsp">Condominios<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="morador/listarMoradores.jsp">Moradores<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="porteiro/listarPorteiro.jsp">Porteiros<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="proprietario/listarProprietario.jsp">Proprietarios<span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <li class="nav navbar-nav navbar-right">
-		<div align="right"><a class="nav-link" href="login/deslogar.jsp"><span class="glyphicon glyphicon-log-out"><br>Logout</a></div> 
-	</li>
-  </div>
-</nav>
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light " style="background-color: #00BFFF;">
+  		<a style="color:black;" class="navbar-brand" href="#">The WebCondo</a> <!-- Fazer o Redirecionamento para pagina inicial -->
+  		
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		
+  		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  			<!-- BOTÃO APARTAMENTO-->
+  			<ul class="navbar-nav">
+  				<li class="nav-item active">
+  					<button style="color: black;" class="btn btn-default navbar-btn" type="button"><a style="text-decoration: none;" href="apartamento/listarApartamento.jsp">Apartamentos</a></button>
+  				</li>
+  			</ul>
+  			
+  			<!-- BOTÃO CONDOMINIOS -->
+  			<ul class="navbar-nav">
+  				<li class="nav-item active">
+  					<button style="color: #00BFFF" class="btn btn-default navbar-btn" type="button"><a style="text-decoration: none;" href="condominio/listarCondominio.jsp">Condominios</a></button>
+  				</li>
+  			</ul>
+  			
+  			<!-- BOTÃO MORADORES -->
+  			<ul class="navbar-nav">
+  				<li class="nav-item active">
+  					<button style="color: #00BFFF" class="btn btn-default navbar-btn" type="button"><a style="text-decoration: none;" href="morador/listarMoradores.jsp">Moradores</a></button>
+  				</li>
+  			</ul>
+  			
+  			<!-- BOTÃO PORTEIROS -->
+  			<ul class="navbar-nav">
+  				<li class="nav-item active">
+  					<button style="color: #00BFFF" class="btn btn-default navbar-btn" type="button"><a style="text-decoration: none;" href="porteiro/listarPorteiro.jsp">Porteiros</a></button>
+  				</li>
+  			</ul>
+  			
+  			<!-- BOTÃO PROPRIETARIOS -->
+  			<ul class="navbar-nav">
+  				<li class="nav-item active">
+  					<button style="color: #00BFFF"class="btn btn-default navbar-btn" type="button"><a style="text-decoration: none;" href="proprietario/listarProprietario.jsp">Proprietarios</a></button>
+  				</li>
+  			</ul>
+  			
+  			<!-- SAIR DA PAGINA  -->
+  			<li class="nav navbar-nav navbar-right">
+				<div align="right"><a class="nav-link" href="login/deslogar.jsp"><span class="glyphicon glyphicon-log-out"><br>Logout</a></div> 
+			</li>	
+	</nav>
 </body>
-
-		<marquee><b><h1><p style="font-size: 200px">Trabalhin<br>Maneiro</p></h1></b></marquee>
+	<center>
+		<img alt="image" src="images/1.jpeg">
+	</center>
 </html>
