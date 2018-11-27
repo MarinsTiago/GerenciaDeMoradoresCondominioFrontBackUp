@@ -50,7 +50,7 @@
   				</li>
   			</ul>
   			
-  			<!-- SAIR DA PAGINA  -->
+  			<!-- sair da pagina  -->
   			<li class="nav navbar-nav navbar-right">
 				<div align="right"><a class="nav-link" href="login/deslogar.jsp"><span class="glyphicon glyphicon-log-out"><br>Logout</a></div> 
 			</li>	

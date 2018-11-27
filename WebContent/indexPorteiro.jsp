@@ -18,6 +18,15 @@
 %>
 
 <body>
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light " style="background-color: #00BFFF;">
+		<a style="color:black;" class="navbar-brand" href="#">The WebCondo</a>
+		<!-- sair da pagina  -->
+  			<li class="nav navbar-nav navbar-right">
+				<div align="right"><a class="nav-link" href="login/deslogar.jsp"><span class="glyphicon glyphicon-log-out"><br>Logout</a></div> 
+			</li>
+	</nav>
+	
+	
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
