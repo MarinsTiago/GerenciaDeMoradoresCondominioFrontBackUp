@@ -104,6 +104,7 @@
 					</tbody>
 				
 				</table>
+				
 				<nav aria-label="...">
   					<ul class="pager">
   			  			<!-- ANTERIOR -->
