@@ -64,6 +64,8 @@
 							</td>
 							<td class="mw-200">
 								<a href="editarProprietario.jsp?id=<%=proprietario.getId() %>"class="btn btn-primary">Editar</a>
+							</td>
+							<td>
 								<a href="crudProprietario.jsp?id=<%=proprietario.getId() %>&acao=excluirProprietario" class="btn btn-danger delBtn">Excluir</a>
 							</td>
 						</tr>
@@ -71,19 +73,26 @@
 					</tbody>
 				
 				</table>
-		</div>
-		<div class="col-md-12 text-center">
-
-			<button onclick="paginaAnterior()" type="button"
-				<%if (paginaAtual == 1)
-				         out.print("disabled"); %>
-				class="btn btn-lg btn-primary">Página Anterior</button>
-			<button onclick="proximaPagina()" type="button"
-				<%if (proprietarios == null)
-				         out.print("disabled");
-			          else if (proprietarios.size() == 0)
-				               out.print("disabled");%>
-				class="btn btn-secondary btn-lg">Próxima Página</button>
+				<nav aria-label="...">
+  					<ul class="pager">
+  			  			<!-- ANTERIOR -->
+    					<li class="previous"><a onclick="paginaAnterior()"
+    						<%if (proprietarios == null)
+				   				out.print("disabled");
+				          	else if (proprietarios.size() == 0)
+					        	out.print("disabled");%>
+							class="btn btn-secondary btn-lg"><span aria-hidden="true">&larr;</span> Anterior</a></li>
+    					
+    					<!-- AVANÇAR -->
+    					<li class="next"><a onclick="proximaPagina()"
+    						<%if (proprietarios == null)
+				    			out.print("disabled");
+			          		else if (proprietarios.size() == 0)
+				        		out.print("disabled");%> 
+				      		class="btn btn-secondary btn-lg">Próximo <span aria-hidden="true">&rarr;</span></a>
+						</li>
+  					</ul>
+				</nav>
 		</div>
 	</div>
 </div>

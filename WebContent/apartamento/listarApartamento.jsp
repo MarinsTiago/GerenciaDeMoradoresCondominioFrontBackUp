@@ -97,6 +97,8 @@
 						</td>
 						<td class="mw-200">
 							<a href="editarApartamento.jsp?id=<%=apartamento.getId() %>"class="btn btn-primary">Editar</a>
+						</td>
+						<td>
 							<a href="crudApartamento.jsp?id=<%=apartamento.getId() %>&acao=excluirApartamento"  class="btn btn-danger delBtn">Excluir</a>
 						</td>
 					</tr>

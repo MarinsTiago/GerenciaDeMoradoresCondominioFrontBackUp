@@ -73,20 +73,26 @@
 				</tbody>
 			
 			</table>
-	</div>
-	<div class="col-md-12 text-center">
-
-			<button onclick="paginaAnterior()" type="button"
-				<%if (paginaAtual == 1)
-				         out.print("disabled"); %>
-				class="btn btn-lg btn-primary">Página Anterior</button>
-			<button onclick="proximaPagina()" type="button"
-				<%if (condominios == null)
-				         out.print("disabled");
-			          else if (condominios.size() == 0)
-				               out.print("disabled");%>
-				class="btn btn-secondary btn-lg">Próxima Página</button>
-
+			<nav aria-label="...">
+  				<ul class="pager">
+  			  		<!-- ANTERIOR -->
+    				<li class="previous"><a onclick="paginaAnterior()"
+    					<%if (condominios == null)
+				   			out.print("disabled");
+				         else if (condominios.size() == 0)
+					        out.print("disabled");%>
+						class="btn btn-secondary btn-lg"><span aria-hidden="true">&larr;</span> Anterior</a></li>
+    					
+    				<!-- AVANÇAR -->
+    				<li class="next"><a onclick="proximaPagina()"
+    					<%if (condominios == null)
+				    		out.print("disabled");
+			          	else if (condominios.size() == 0)
+				        	out.print("disabled");%> 
+				      	class="btn btn-secondary btn-lg">Próximo <span aria-hidden="true">&rarr;</span></a>
+					</li>
+  				</ul>
+			</nav>
 	</div>
 </div>
 </div>
