@@ -1,10 +1,10 @@
+<%@ include file="/estrutura/header.jsp"%>
 <%@page import="model.Proprietario"%>
 <%@page import="model.Morador"%>
 <%@page import="java.util.List"%>
 <%@page import="control.ProprietarioControl"%>
 <%@page import="control.MoradorControl"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -28,40 +28,72 @@
 	List<Morador> moradores = mc.listar(paginaAtual, limitePorPagina);
 	List<Proprietario> proprietarios = pc.listar(paginaAtual, limitePorPagina);
 %>
-<body>
-
-	<form action="../apartamento/crudApartamento.jsp" method="POST">
-		<input type="hidden" name="acao" value="incluirApartamento">
-		
-		<select id="morador" name="morador">
-			 <option value="0">Selecione o morador</option>
-		<%
-			for(Morador m: moradores){
-				out.print("<option value='" + m.getId() + "'>"+ m.getNome() + "</option>");
-			}	
-		%>
-		</select><br>
-		
-		<select id="proprietario" name="proprietario">
-			<option>Selecione o proprietario</option>
+<body class="bg-light" style="margin-top: 5%;">
+	<div class="container">
+		<form action="../apartamento/crudApartamento.jsp" method="POST">
+			<input type="hidden" name="acao" value="incluirApartamento">
 			
-			<%
-			for(Proprietario p: proprietarios){
-				out.print("<option value='" + p.getId() + "'>"+ p.getNome() + "</option>");
-			}	
-		%>
-		</select><br>
-		
-		Numero apartamento:<br><input type="number" name="numero"><br>
-		
-		Bloco apartamento:<br><input type="text" name="bloco"><br>
-		
-		Apartamento Ocupado?<input type="checkbox" name="ocupado"><br>
-		
-		<input type="submit" value="Cadastrar">
-	
-	
-	</form>
-
+			<span class="contact100-form-title">
+    				Cadastro Apartamento
+    		</span>
+    		
+    		<div class="row">
+    			<!-- Numero -->
+    			<div class="col-6 mb-3">
+    				<label>Numero do Apartamento</label>
+    				<input type="number" name="numero" class="form-control" required>
+    				<div class="invalid-feedback">
+                  			É obrigatório inserir um numero válido.
+                	</div>
+    			</div>
+    			
+    			<!-- Bloco -->
+    			<div class="col-6 mb-3">
+    				<label>Bloco do apartamento</label>
+    				<input type="text" name="bloco" class="form-control" required>
+    				<div class="invalid-feedback">
+                  			É obrigatório inserir o bloco do apartamento.
+                	</div>
+    			</div>
+    		</div>
+    		
+    		<!-- MORADOR -->
+    		<div class="mb-3">
+            	<label>Selecione o Morador</label>
+            	<select class="form-control" id="morador" name="morador">
+       				<option value="0">Selecione o morador</option>
+    					<%for(Morador m: moradores){
+        					out.print("<option value='" + m.getId() + "'>"+ m.getNome() + "</option>");
+      						} 
+    					%>
+    			</select>
+    		</div>
+    		
+    		<!-- PROPRIETARIO -->
+    		<div class="mb-3">
+            	<label>Selecione o Proprietario</label>
+            	<select class="form-control" id="proprietario" name="proprietario">
+      				<option>Selecione o proprietario</option>
+      					<%for(Proprietario p: proprietarios){
+        					out.print("<option value='" + p.getId() + "'>"+ p.getNome() + "</option>");
+      						} 
+    					%>
+    			</select>
+    		</div>
+    		
+    		<hr class="mb-4">
+    		
+    		<!-- APARTAMENTO OCUPADO? -->
+    		<div class="mb-3 ">
+              <label >Apartamento Ocupado?</label>
+              <input type="checkbox" name="ocupado"><span>Sim</span>
+            </div>
+            
+            <hr class="mb-4">
+            
+             <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>   		
+		</form>
+	</div>
+	<%@ include file="/estrutura/footer.jsp"%>
 </body>
 </html>

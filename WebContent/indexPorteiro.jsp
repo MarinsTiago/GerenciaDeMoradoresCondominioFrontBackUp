@@ -9,8 +9,8 @@
 <head>
 	<style type="text/css">
 		img{
-			width: 400px;
-			height: 400px;
+			width: 300px;
+			height: 300px;
 		}
 	</style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
