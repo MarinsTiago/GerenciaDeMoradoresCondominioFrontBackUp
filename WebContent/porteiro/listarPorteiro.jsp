@@ -62,6 +62,8 @@
 							</td>
 							<td class="mw-200">
 								<a href="editarPorteiro.jsp?id=<%=porteiro.getId() %>"class="btn btn-primary">Editar</a>
+							</td>
+							<td>
 								<a href="crudPorteiro.jsp?id=<%=porteiro.getId() %>&acao=excluirPorteiro" class="btn btn-danger delBtn">Excluir</a>
 							</td>
 						</tr>

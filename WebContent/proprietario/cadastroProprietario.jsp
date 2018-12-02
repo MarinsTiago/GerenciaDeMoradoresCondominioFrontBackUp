@@ -5,65 +5,82 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-	
-	
-	<div class="container-contact100">
-		<div class="wrap-contact100">
-			<form action="../proprietario/crudProprietario.jsp" method="POST" class="contact100-form validate-form">
-				<input type="hidden" name="acao" value="incluirProprietario">	
-				<input type="hidden" name="tipoUsuario" value="proprietario"><!--Não alterar este campo-->
-				
-				<span class="contact100-form-title">Cadastro Proprietario</span>
-				
-				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="text" name="nome" placeholder="Nome">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="text" name="cpf" placeholder="CPF">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 validate-input">
-					<input id="first-name" class="input100" type="email" name="email" placeholder="E-mail">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 rs1">
-					<input id="first-name" class="input100" type="text" name="telefone" placeholder="Telefone">
-					<span class="focus-input100"></span>
-				</div>
+<body class="bg-light" style="margin-top: 5%;">
+	<div class="container">
+		<form action="../proprietario/crudProprietario.jsp" method="POST">
+			<input type="hidden" name="acao" value="incluirProprietario">	
+			<input type="hidden" name="tipoUsuario" value="proprietario"><!--Não alterar este campo-->
+			
+			<span class="contact100-form-title">
+    				Cadastro Proprietario
+    		</span>
+    		
+    		<div class="row">
+    			
+    			<!-- NOME -->
+              	<div class="col-6 mb-3">
+                	<label>Nome</label>
+                	<input type="text" name="nome" class="form-control" placeholder="Pedro Trabalha na Itaipu" required>
+                	<div class="invalid-feedback">
+                  		É obrigatório inserir um nome válido.
+                	</div>
+              	</div>
+              		
+              	<!-- CPF -->
+              	<div class="col-6 mb-3">
+                	<label>CPF</label>
+                	<input type="text" name="cpf" class="form-control" placeholder="111.111.111-11" required>
+                	<div class="invalid-feedback">
+                  		É obrigatório inserir um sobre CPF válido.
+                	</div>
+              	</div>
+            </div>
+            
+            <!-- EMAIL -->
+    		<div class="mb-3">
+              	<label>E-mail</label>
+              	<div class="input-group">
+                	<input type="email" name="email" class="form-control" placeholder="exemple@exemple.com" required>
+                	<div class="invalid-feedback" style="width: 100%;">
+                  		Seu E-mail é obrigatório.
+                	</div>
+              	</div>
+            </div>
+            <div class="row">
+            	<!-- TELEFONE -->
+            	<div class="col-6 mb-3">
+            		<label>Telefone</label>
+            		<input type="text" placeholder="(11)1111-1111" class="form-control" name="telefone">
+            	</div>
+            		
+            	<!-- CELULAR -->
+            	<div class="col-6 mb-3">
+            		<label>Celular</label>
+            		<input type="text" class="form-control" placeholder="(11) 1 1111-1111" name="celular">
+            	</div>
+            </div>
+            <div class="row">	
+    			<!-- LOGIN -->
+              	<div class="col-6 mb-3">
+                	<label>Login</label>
+                	<input type="text" name="login" class="form-control" required>
+                	<div class="invalid-feedback">
+                  		É obrigatório inserir um login válido.
+                	</div>
+              	</div>
+              		
+              	<!-- SENHA -->
+              	<div class="col-6 mb-3">
+                	<label >Senha</label>
+                	<input type="password" name="senha" class="form-control" required>
+                	<div class="invalid-feedback">
+                  		É obrigatório inserir uma senha válida.
+                	</div>
+              	</div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>		
+		</form>
 		
-				<div class="wrap-input100 rs1">
-					<input id="first-name" class="input100" type="text" name="celular" placeholder="Celular">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="text" name="login" placeholder="Login">
-					<span class="focus-input100"></span>
-				</div>
-		
-				<div class="wrap-input100 rs1 validate-input">
-					<input id="first-name" class="input100" type="password" name="senha" placeholder="Senha">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="zmdi zmdi-arrow-right m-l-8"></i>
-						</span>
-					</button>
-				</div>
-			</form>
-		</div>
 	</div>
-		<div id="dropDownSelect1"></div>
-
-		<%@ include file="/estrutura/footer.jsp"%>
 </body>
 </html>

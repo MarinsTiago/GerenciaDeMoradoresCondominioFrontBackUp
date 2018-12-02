@@ -5,35 +5,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-	<div class="container-contact100">
-		<div class="wrap-contact100">
-			<form action="../condominio/crudCondominio.jsp" method="post" class="contact100-form validate-form">
-				<input type="hidden" name="acao" value="incluirCondominio">
-				<span class="contact100-form-title">
-					Cadastro Condominio
-				</span>
-				
-				<div class="wrap-input100 validate-input">
-					<input id="first-name" class="input100" type="text" name="nome" placeholder="Nome">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							Submit
-							<i class="zmdi zmdi-arrow-right m-l-8"></i>
-						</span>
-					</button>
-				</div>
-			</form>
-		</div>
+<body class="bg-light" style="margin-top: 5%;">
+	<div class="container">
+		<form action="../condominio/crudCondominio.jsp" method="post">
+			<input type="hidden" name="acao" value="incluirCondominio">
+			
+			<span class="contact100-form-title">
+    				Cadastro Condominio
+    		</span>
+    		
+    		<div class="col">
+    			<label>Nome</label>
+    				<input type="text" name="nome" class="form-control" required>
+    				<div class="invalid-feedback">
+                  			É obrigatório inserir o nome.
+                	</div>
+    		</div>
+    		
+    		<hr class="mb-4">
+    		
+    		<button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+		</form>
 	</div>
-	
-	
-	<div id="dropDownSelect1"></div>
-
-	<%@ include file="/estrutura/footer.jsp"%>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body class="bg-light">
 	<nav class="navbar navbar-default navbar-expand-lg navbar-light " style="background-color: #00BFFF;">
   		<a style="color:black;" class="navbar-brand" href="#">The WebCondo</a> <!-- Fazer o Redirecionamento para pagina inicial -->
   		
