@@ -13,7 +13,7 @@
 			<input type="hidden" name="tipoUsuario" value="morador"> <!--NÃO ALTERAR ESTE CAMPO-->
 			
 			<span class="contact100-form-title">
-    				Cadastro Morador
+    				Formulario para Cadastro de Morador
     		</span>
     		
 			<div class="row">
@@ -111,7 +111,11 @@
                 		</div>
     			</div>
     			
-    			<button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+    			<button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button><br><br>
+    			
+    			<div align="center">
+            		<a class="btn btn-primary" type="button" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Voltar a página anterior</a>
+            	</div>
 			</div>
 		</form>
 	</div>

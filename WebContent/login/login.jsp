@@ -5,17 +5,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>The WebCondo</title>
 </head>
-<body>
+	
+<body style="background-image: url('../images/casa.jpg');">
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('../images/bg-01.jpg');">
+		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" id="Login" method="POST" action="../login/controleLogin.jsp">
 					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
+						<img class="login100-form-logo" src="../images/1.jpeg" width="100px" height="100px">
 					</span>
-
 					<span class="login100-form-title p-b-34 p-t-27">
-						WebCondo
+						
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "insira um email válido">
@@ -27,13 +27,6 @@
 						<input id="senha" class="input100" type="password" name="senha" placeholder="Senha">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
-
-					<!-- <div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>-->
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">

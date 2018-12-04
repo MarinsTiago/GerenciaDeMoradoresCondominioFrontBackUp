@@ -107,6 +107,10 @@
 				
 				</table>
 				
+				<div align="center">
+            		<a class="btn btn-primary" type="button" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Voltar a página anterior</a>
+            	</div>
+				
 				<nav aria-label="...">
   					<ul class="pager">
   			  			<!-- ANTERIOR -->

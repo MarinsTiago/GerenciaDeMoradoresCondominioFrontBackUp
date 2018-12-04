@@ -21,7 +21,7 @@
     			<input type="hidden" name="tipoUsuario" value="porteiro"> <!--NÃO ALTERAR ESTE CAMPO-->
     			
     			<span class="contact100-form-title">
-    				CadastroPorteiro
+    				Formulario para Cadastro de Porteiro
     			</span>
     			
     			<div class="row">
@@ -101,8 +101,15 @@
                 		</div>
               		</div>
             	</div>
-            	<button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+            	<button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button><br>
+            	
+            	<div align="center">
+            		<a class="btn btn-primary" type="button" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Voltar a página anterior</a>
+            	</div>
+            	
 			</form>
+			
+			
 	</div>
 	<%@ include file="/estrutura/footer.jsp"%>
 </body>

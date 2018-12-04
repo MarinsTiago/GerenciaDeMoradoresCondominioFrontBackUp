@@ -12,7 +12,7 @@
 			<input type="hidden" name="tipoUsuario" value="proprietario"><!--Não alterar este campo-->
 			
 			<span class="contact100-form-title">
-    				Cadastro Proprietario
+    				Formulario para Cadastro de Proprietario
     		</span>
     		
     		<div class="row">
@@ -78,7 +78,10 @@
                 	</div>
               	</div>
             </div>
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>		
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button><br><br>	
+            <div align="center">
+            		<a class="btn btn-primary" type="button" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Voltar a página anterior</a>
+            </div>	
 		</form>
 		
 	</div>
